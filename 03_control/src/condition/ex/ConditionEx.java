@@ -241,62 +241,72 @@ public class ConditionEx {
 
 	public void practice() {
 		
-		System.out.println("국어 성적 입력 :");
-		int kor = sc.nextInt();
-		System.out.println("영어 성적 입력 :");
-		int eng = sc.nextInt();
-		System.out.println("수학 성적 입력 :");
-		int mat = sc.nextInt();
-		System.out.println("사회 성적 입력 :");
-		int soc = sc.nextInt();
-		System.out.println("과학 성적 입력 :");
-		int sci = sc.nextInt();
+		System.out.print("점수 입력(국 영 수 사 과) : ");
 		
-		if(kor < 60);
+		int kor = sc.nextInt(); // 국
+		int eng = sc.nextInt(); // 영
+		int mat = sc.nextInt(); // 수
+		int soc = sc.nextInt(); // 사
+ 		int sci = sc.nextInt(); // 과
+ 		
+ 		
+ 		// 40점 미만인 과목 검사
+ 		boolean flag = false;
+ 		String str = ""; // 빈칸 (자료형  : string,내용 x)
+ 		if(kor < 40) {
+ 			flag = true;
+ 			str += "국어 ";
+ 		}
+ 		if(eng < 40) {
+ 			flag = true;
+ 			str += "영어 ";
+ 		}
+ 		if(mat < 40) {
+ 			flag = true;
+ 			str += "수학 ";
+ 		}
+ 		if(soc < 40) {
+ 			flag = true;
+ 			str += "사회 ";
+ 		}
+ 		if(sci < 40) {
+ 			flag = true;
+ 			str += "과학 ";
+ 		}
+ 		
+ 		// 40점 미만 과목이 존재하는 경우
+ 		if(flag) {
+ 			System.out.printf("fail[40점 미만 과목 : %s]", str);
+ 			return;
+ 		}
+ 		
+ 		
 		
 		
+		// 평균 
 		double num = 
-(kor * 0.2 + eng * 0.2 + mat * 0.2 + soc * 0.2 + sci * 0.2);
+(kor  + eng + mat + soc  + sci ) / 5.0 ;
 		
-		String result;
-		if(num < 60) result = "pass";
-		else if (num > 100) result = "다시 입력해주세요";
-		else result = "합격";
+		if(num < 60.0) {
 		
-		System.out.println(result);
-		
+		System.out.printf("fall[%.1f(평균미달)]",num);
+		return; // Early return; (중간에 메서드를 종료)
+		}
 		
 		
 		
 		
 		
-		String fall;
-		
-		if (kor < 40)
-			fall = ((kor <= 40) ? "FALL" : "PASS");
-		else if (eng < 40)
-			fall = ((eng <= 40) ? "FALL" : "PASS");
-		else if (mat < 40)
-			fall = ((eng <= 40) ? "FALL" : "PASS");
-		else if (soc < 40)
-			fall = ((eng <= 40) ? "FALL" : "PASS");
-		else if (sci < 40)
-			fall = ((eng <= 40) ? "FALL" : "PASS");
-		else fall = "다시 입력.";
-//		fall pass 구분기
+
 		
 			
-		System.out.println(fall);
+		System.out.printf("fail[점수 : %,1f / 100]", num);
 		
 
 		
 
 		
- 		System.out.printf("국어:"+ kor, fall);
- 		System.out.println("영어"+eng, fall);
- 		System.out.println("수학"+mat, fall);
- 		System.out.println("사회"+soc, fall);
- 		System.out.println("과학"+sci, fall);
+
 	}
 
 }
