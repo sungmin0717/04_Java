@@ -10,7 +10,6 @@ public class StudentRun {
 		// StudentView 객체 생성
 		StudentView view = new StudentView();
 		view.mainMenu();
-		
 	}
 	
 	
