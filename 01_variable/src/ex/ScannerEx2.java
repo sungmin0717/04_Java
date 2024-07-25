@@ -38,7 +38,7 @@ public class ScannerEx2 {
 		 * */
 		
 		System.out.print("자기 소개 : ");
-		sc.nextLine((); // 버퍼에 남아있는 개행문자 엔터 제거
+		sc.nextLine(); // 버퍼에 남아있는 개행문자 엔터 제거
 		   // (자세한 설명은 클래스 아래 확인)
 		String introduce = sc.nextLine();
 		
