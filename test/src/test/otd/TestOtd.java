@@ -2,28 +2,39 @@ package test.otd;
 
 public class TestOtd {
 
-	class Animal{
-		String name = "동물";
-			public void move(){
-				System.out.println("움직인다.");
-			}
-	}
-	class Fish extends Animal{
-		String name = "물고기";
-		public void move() {
-			System.out.println("물속에서 헤엄친다.");
+	public class Car{
+		
+		private String model;
+		private int year;
+		
+			
+
+		public Car(String model, int year) {
+			this.model = model;
+			this.year = year;
+			
+			
 		}
-	}
-	class dog extends Animal{
-		String name = "강아지";
-		public void move() {
-			System.out.println("네발로 뛴다");
+		public void displayInfo() {
+			System.out.println("Model" + model + "year : " + year);
 		}
-	}
-	class Eagle extends Animal{
-		String name = "독수리";
-		public void move() {
-			System.out.println("하늘에 훨훨 난다");
+		
+		
+		
+		public String getModel() {
+			return model;
 		}
+		public void setModel(String model) {
+			this.model = model;
+		}
+		public int getYear() {
+			return year;
+		}
+		public void setYear(int year) {
+			this.year = year;
+		}
+		
+		
 	}
+
 }
