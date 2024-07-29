@@ -15,8 +15,8 @@ public class BookDTO {
 		this.writer = writer;
 		this.price = price;
 	}
-
-	public String getTitle() {
+//    getter/setter    alt + shift
+ 	public String getTitle() {
 		return title;
 	}
 
@@ -40,8 +40,8 @@ public class BookDTO {
 		this.price = price;
 	}
 
-	// 이클립스 toString() 자동완성  : alt + shift + s -> s
-	@Override
+	// 이클립스 toString() 자동완성  : alt + shift + s -> s   제네레이톨 
+	@Override                            
 	public String toString() {
 		return "BookDTO [title=" + title + ", writer=" + writer + ", price=" + price + "]";
 	}

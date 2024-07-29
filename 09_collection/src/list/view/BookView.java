@@ -9,12 +9,14 @@ import list.service.BookService;
 // view : 사용자에게 보여지는 부분(출력, 입력)
 public class BookView {
 	
+	//2개의 필드 
 	private Scanner sc = new Scanner(System.in);
 	private BookService service = new BookService();
 	
 	/**
 	 * 사용자에게 보여질 메인 화면
 	 */
+	
 	public void mainMenu() {
 		int input = 0;
 		

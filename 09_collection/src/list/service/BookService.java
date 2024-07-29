@@ -130,7 +130,7 @@ public class BookService {
 	 * @return null :index 범위가 맞지 않음 제목 : index가 정상 범위
 	 */
 	public String removeBook(int index) {
-//		index가 bookList 범위 내 인덱슥 맞는지 확인
+//		index가 bookList 범위 내 인덱스 맞는지 확인
 		if (index < 0 || index >= bookList.size()) {
 			// 범위 초과
 			return null;
