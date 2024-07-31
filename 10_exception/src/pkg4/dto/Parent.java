@@ -9,5 +9,6 @@ public class Parent {
 
 	public void method2() throws IOException{}
 	
+	
 	public void method3() throws IOException{}
 }

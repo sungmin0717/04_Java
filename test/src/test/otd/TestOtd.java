@@ -1,40 +1,22 @@
 package test.otd;
 
+import java.io.File;
+import java.io.IOException;
+
 public class TestOtd {
 
-	public class Car{
-		
-		private String model;
-		private int year;
-		
-			
+	public void test1() {
+		try {
+			File f = new File("test.txt");
+			if (f.createNewFile()) {
+				System.out.println("파일 생성 : " + f.getName());
+			} else {
+				System.out.println("이미 파일이 존재 합니다.");
 
-		public Car(String model, int year) {
-			this.model = model;
-			this.year = year;
-			
-			
+			}
+		} catch (IOException e) {
+			System.out.println("오류가 발생했습니다.");
+			e.printStackTrace();
 		}
-		public void displayInfo() {
-			System.out.println("Model" + model + "year : " + year);
-		}
-		
-		
-		
-		public String getModel() {
-			return model;
-		}
-		public void setModel(String model) {
-			this.model = model;
-		}
-		public int getYear() {
-			return year;
-		}
-		public void setYear(int year) {
-			this.year = year;
-		}
-		
-		
 	}
-
 }

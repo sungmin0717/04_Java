@@ -1,0 +1,13 @@
+cmd
+java -jar lombok.jar 탐색후 적용
+
+
+eclips 적용후 설치 
+
+eclips 리스타트 
+
+자바 폴더 우클릭
+
+빌드 패치 -> 콘피그어 빌드 패치
+
+라이브러리에 lombok 추가.
