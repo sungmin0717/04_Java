@@ -6,8 +6,14 @@ public class MemberView {
 	public void mainMenu() {
 		
 		int input = 0;
-			
 		
+		
+		
+		do(){
+			
+		try {
+			
+		} catch (Exception e) {	
 		switch(input) { 
 		case 1: sigup(); break;
 		case 2: seletAll(); break;
@@ -24,6 +30,15 @@ public class MemberView {
 			System.out.println("잘못입력되었습니다.");
 			break;
 			
+			}
+		
+         	}catch (NumberFormatException e) {
+			System.out.println("숫자 값만 입력해주세요");
+			input = -1;
 		}
+	
+		}while(input != 0);
+		break;
+			
 	}
 }

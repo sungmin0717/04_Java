@@ -2,6 +2,7 @@ package test.otd;
 
 import java.io.File;
 import java.io.IOException;
+import java.util.Arrays;
 
 public class TestOtd {
 
@@ -19,4 +20,26 @@ public class TestOtd {
 			e.printStackTrace();
 		}
 	}
-}
+
+	
+	
+	class Solution {
+	    public int[] solution(int[] num_list) {
+	        int[] answer = {12, 4, 15, 46, 38, 1, 14};
+	        Arrays.sort(num_list);
+	        
+	        for(int i =0; i <= 46 ; i++) {
+	        	answer[i] = num_list[i];
+	        }
+	        return answer;
+	    }
+	}
+
+
+
+	public void test2() {
+		// TODO Auto-generated method stub
+		
+	}
+	}
+

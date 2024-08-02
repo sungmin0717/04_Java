@@ -6,6 +6,12 @@ public class TestRun {
 
 	public static void main(String[] args) {
 		TestOtd service = new TestOtd();
-		service.test1();
+//		service.test1();
+		service.Solution;
+		
+		
+			
 	}
+	
+
 }

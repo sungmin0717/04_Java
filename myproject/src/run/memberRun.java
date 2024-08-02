@@ -1,13 +1,13 @@
 package run;
 
-import service.MemberService1;
+import view.MemberView;
 
 public class memberRun {
 
 	public static void main(String[] args) {
 		
-		MemberService1 service = new MemberService1();
+		MemberView view = new MemberView();
 		
-		service.test();
+		view.mainMenu();
 	}
 }

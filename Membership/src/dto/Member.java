@@ -3,6 +3,7 @@ package dto;
 import java.io.Serializable;
 
 import lombok.AllArgsConstructor;
+import lombok.EqualsAndHashCode;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
@@ -13,6 +14,7 @@ import lombok.ToString;
 @NoArgsConstructor // 기본 생성자
 @AllArgsConstructor// 전체 필드 매개 변수 생성자
 @ToString // toString() 오버라이딩
+@EqualsAndHashCode // equals(), hashCode() 오버라이딩.
 // lombok 라이브러리 기능.
 
 public class Member implements Serializable{
@@ -35,4 +37,7 @@ public class Member implements Serializable{
 	private String phone;
 	private int amount;
 	private int grade;
+	
+	
+	
 }
