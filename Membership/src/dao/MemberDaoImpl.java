@@ -95,7 +95,10 @@ public class MemberDaoImpl implements MemberDao{
 		// memberList를 지정된 파일에 출력(저장)
 		
 		try {
+			//아우풋 스트림 생성 아우풋스트림은 객체생성 파일아웃풋 스트림 파일 패치
 			oos = new ObjectOutputStream(new FileOutputStream(FILE_PATH));
+			
+			//  writeObject 기록 멤버리스트를.
 			oos.writeObject(memberList);
 		} finally {
 			if(oos != null) oos.close(); // flush() + 메모리 반환
