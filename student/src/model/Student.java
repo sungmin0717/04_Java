@@ -7,9 +7,6 @@ public class Student {
 	private String name;
 	private int score;
 	
-	void Student(String name, int score){
-		
-	}
 		
 
 
